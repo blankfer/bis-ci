@@ -51,7 +51,7 @@ jobs:
       - name: _bisdev (check.sh, bislint, fence, the canonical libs)
         uses: actions/checkout@v4
         with:
-          repository: arnold891-eng/bisdev
+          repository: blankfer/bisdev
           token: ${{ secrets.BISDEV_TOKEN }}
           path: AddOns/_bisdev
       # skipped when the addon IS BiSTheme: the same path twice checks the pull request's
@@ -61,7 +61,7 @@ jobs:
         if: ${{ inputs.addon != 'BiSTheme' }}
         uses: actions/checkout@v4
         with:
-          repository: arnold891-eng/BiSTheme
+          repository: blankfer/BiSTheme
           token: ${{ secrets.BISDEV_TOKEN }}
           path: AddOns/BiSTheme
       - name: lua 5.1

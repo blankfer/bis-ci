@@ -1,10 +1,10 @@
 # bis-ci
 
 Two reusable GitHub Actions workflows, shared by the BiS World of Warcraft addons
-([BiSTheme](https://github.com/arnold891-eng/BiSTheme), [BiSTools](https://github.com/arnold891-eng/BiSTools),
-[BiSGamba](https://github.com/arnold891-eng/BiSGamba), [BiSHealing](https://github.com/arnold891-eng/BiSHealing),
-[BiSInnervate](https://github.com/arnold891-eng/BiSInnervate), [Nebbinator](https://github.com/arnold891-eng/Nebbinator),
-[BiSMemories](https://github.com/arnold891-eng/BiSMemories) and three private ones).
+([BiSTheme](https://github.com/blankfer/BiSTheme), [BiSTools](https://github.com/blankfer/BiSTools),
+[BiSGamba](https://github.com/blankfer/BiSGamba), [BiSHealing](https://github.com/blankfer/BiSHealing),
+[BiSInnervate](https://github.com/blankfer/BiSInnervate), [Nebbinator](https://github.com/blankfer/Nebbinator),
+[BiSMemories](https://github.com/blankfer/BiSMemories) and three private ones).
 
 | workflow | what it does |
 |---|---|
@@ -16,7 +16,7 @@ Each addon calls one with a nine-line caller:
 ```yaml
 jobs:
   check:
-    uses: arnold891-eng/bis-ci/.github/workflows/check.yml@main
+    uses: blankfer/bis-ci/.github/workflows/check.yml@main
     with:
       addon: BiSTools
     secrets:
